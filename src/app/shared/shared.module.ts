@@ -7,6 +7,7 @@ import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { RouterModule } from '@angular/router';
 import { LayoutComponent } from './components/layout/layout.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,12 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     LayoutComponent,
     PageNotFoundComponent,
     HighlightDirective,
-    ExponentialPipe
+    ExponentialPipe,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
   ],
   exports: [
     HeaderComponent,
